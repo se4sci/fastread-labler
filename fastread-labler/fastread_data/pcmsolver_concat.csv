@@ -1,0 +1,329 @@
+,Document Title,Abstract,time,label
+0,2473699d,Merge pull request #20 from wpoely86/eigendir,1540317256.6932142,1
+1,045495c2,Merge pull request #99 from robertodr/format-code,1540317238.009293,1
+2,7fa10e7b,Merge pull request #5 from robertodr/master,1540317230.063832,1
+3,e9aef847,Green's function are now used only in system matrix construction,1540317224.879363,1
+4,07ccdd3e,Derivative order can now be given from input. Lacks the possibility of giving the choice of using the analytic GF derivative from input,1540317220.599043,1
+5,85840475,Solved issue with make -jN. Parallel make now works fine.,1540317215.368734,1
+6,b93dce58,added scaling Factor in WaveletCavity and adapted the calculation of asc in c6h6,1540317213.297038,1
+7,ecb669ab,Merge pull request #98 from robertodr/build-with-ninja,1540317208.222375,1
+8,414cc455,String passing for input works with DIRAC. Yuppie  ),1540317186.123178,1
+9,9b4ae390,Convert internal solvent probe radius from angstrom to au. Closes bug #447,1540317180.467536,1
+10,a3bc648c,1. added unit tests for overloaded operators in surface function class  2. removerd CavityOfSpheres class. This extra layer of indirection did more harm than good.,1540317134.790231,1
+11,a38bf478,Fixed gpopen/gpclose problem Careful with common blocks: when compiling two libraries that use a common block with the same name they will then share the same memory.,1540317131.676686,1
+12,69f814bf,Symmetric cavity generator finally FULLY works.,1540317080.4234948,1
+13,7ca96a62,Merge pull request #96 from robertodr/restart-cavity,1540317064.308827,1
+14,60608b6e,Work in progress to remove template according to Ville's suggestion: 1) GreensFunctionInterface without template done 2) Template from IEFSolver and WEMSolver class need to be removed 3) Input script with derivative option fixed 4) Comp diag element should be moved to the various GF classes (much cleaner...),1540317059.36651,1
+15,46f0d40e,Polishing cavity classes.,1540317053.3680391,1
+16,dae96505,Correct inconsistency in mpl::vector and index assigned to Tanh profile policy,1540317039.984102,1
+17,784141bc,Correct form of diagonal of D operator for diffuse interface,1540317032.262953,1
+18,f529c9fc,Merge branch 'wavelet-cavity' into devel,1540317024.725058,1
+19,1221dfaa,Super big polishing commit. The order of includes IS IMPORTANT  I will document in the programmers' manual how to do it properly. The coupling between wavelet cavity and wavelet solver (issue 368) MUST be solved.,1540316975.370751,1
+20,a3628362,Merge branch 'wavelet-cavity' of repo.ctcc.no:pcmsolver into wavelet-cavity,1540316964.126389,1
+21,5d3b2dfa,uploaded wavelet cavity to be sent to the wem solver,1540316957.817034,1
+22,e4d6b342,Disable compilation of unit tests.,1540316941.726342,1
+23,2c429e13,Move some functions around. Seems to marginally speed up compilation...,1540316939.79169,1
+24,ec25bb58,compilied with Wavelet Cavity included,1540316935.670614,1
+25,a0a90754,Still trying to get coloured cavity.,1540316933.2689,1
+26,57f4303e,Found and solved a bug when requesting Explicit initialization of the spheres list.,1540316921.812753,1
+27,86962e61,Correct use of nonequilibrium solver,1540316918.317847,1
+28,2c1c3585,debugging wavelet solver,1540316915.051092,1
+29,d2aeff96,Mods by Andy Simmonett to correct kt/kt name conflicts.,1540316907.243271,1
+30,fd9bac19,Correct the implementation of Input as a Singleton. Trying to recover the work I lost on the interface.,1540316904.666655,1
+31,0dd01567,Wavelet cavity generator cannot handle one single sphere. Investigating this bug.,1540316902.317107,1
+32,a7fd22a1,pow(int  int) is not an ammissible overload before C++11. Correct.,1540316900.324612,1
+33,f64d8f36,Add scale function to Sphere class. Do AU-Angstrom-AU conversion in wavelet cavity generation (avoids formation of cavity with holes),1540316898.447602,1
+34,155b5039,Solved a bug in the symmetric cavity generator.,1540316896.523358,1
+35,7d879dee,Re-enable compilation of tests relying on gepol cavity.,1540316887.252533,1
+36,bc281724,debugging wavelet cavity,1540316885.011699,1
+37,7a7fe0f4,Correct wavelet example,1540316883.088639,1
+38,aa05e401,Forward input to TanhSphericalDiffuse for correct construction,1540316877.626318,1
+39,4cfdaf0c,Correct warts in Boost build-up,1540316875.123939,1
+40,81d46617,Correct namespace issued for placeholders,1540316873.0868778,1
+41,ee0864ba,Correct wrong dimensioning of nperm(: :) array,1540316870.340178,1
+42,cebb8137,Correct possible string overflow,1540316867.67802,1
+43,94614328,Correct erroneous call to check_include_files CMake function,1540316844.010155,1
+44,98dadd93,Correct some overridden virtual function warnings from Clang,1540316841.662265,1
+45,f923fad8,Correct mistake,1540316830.066154,1
+46,05a069d5,Correct surface function test.,1540316826.79493,1
+47,b3ffa509,Correct signature of one function in the F90 API,1540316814.689006,1
+48,857b4bd3,Correct error in ProfileTypes header file,1540316812.209958,1
+49,73d0023e,Compilation of Fortran90 API works,1540316805.98206,1
+50,b4075844,Correct potential flaw with Boost.Quadrature,1540316803.83046,1
+51,9e0a8e31,Stupid bug in input reading.,1540316800.559845,1
+52,cdd916b7,Change calculation of parity. This is used in the block-diagonalization of the PCM matrix,1540316797.029244,1
+53,0e5ff863,still debugging  now i get the first compression  however errors occur somewhere after that,1540316780.216088,1
+54,f99a7104,Fix builds on Magnum CI + Eigen3 issues + RPATH issues,1540316775.692527,1
+55,860360a3,Correct bug in input reading with method 2 unearthed by MI.,1540316774.057384,1
+56,f64f788e,Should finally correct all errors due to simultaneous opening of PEDRA.OUT and cavity.off,1540316767.746392,1
+57,e40e8124,Fix radii print out + add two new solvents,1540316766.184421,1
+58,3e9a4104,Exposing the possibility to choose an irrep in the calculation of charges.,1540316764.866946,1
+59,652f09ac,Small refactor in Meddle internals,1540316762.434218,1
+60,39d98e8c,Small updates  more testing is needed for the integrators,1540316758.795903,1
+61,55bae35d,Fixed a bug: normal vectors were NOT normalized. The result was surprisingly accurare despite the bug. Need to clean up the code a bit fomr garbage printing before continuing....,1540316756.3885849,1
+62,4a0240a2,Added a stub for the Input class. Various minor improvements in structure.,1540316752.593837,1
+63,790768e5,Correct dependency on Boost and compilation errors for a test source file,1540316748.902066,1
+64,07d9f2ba,compilation errors in wemFiles and wemSolvers removed,1540316746.24202,1
+65,15beed55,some more compilation errors removed,1540316740.011723,1
+66,a31738f3,added volume calculation,1540316737.532525,1
+67,32a568b5,fixed regex for finding version num,1540316735.910867,1
+68,95c07350,A small thing in pedra_cavity.F,1540316733.5363288,1
+69,a283b964,added WEMRHS2M to WEMRHS - the rhs with precalculated potential and changed the call to constructor of WEMSolver to have default value last - next remove compilation errors and test,1540316730.7680779,1
+70,bdb27830,Fix inconsistency betwen NumPy surface function save and load functions,1540316726.8765962,1
+71,d9dd6a63,Fix bug in Eigen to NumPy functions (row major vs. col major confusion),1540316724.295809,1
+72,0f3eba40,Fix bug introduced in previous commit. The data() method of Eigen object has to handled extra carefully!,1540316721.062126,1
+73,a497714e,Minor refactoring. There's a problem with the integrator (it segfaults),1540316719.303713,1
+74,fe7849ae,Correct some stupid errors.,1540316717.482878,1
+75,5d6b3066,Fixed default template parameter problem for non C++11 compilers,1540316711.292432,1
+76,fb42e2cb,Minor tweaks (following Coverity analysis),1540316708.005142,1
+77,79e63cf8,Correct calculation of kernel for D operator,1540316702.967355,1
+78,653e92fc,[Backport from ReSpect] Fix Fortran API functions for string passing,1540316700.0286028,1
+79,7b528c29,Merge pull request #71 from robertodr/fix-fortran-api,1540316694.947796,1
+80,d5ef738b,FIx handling of pcmsolver.f90 file (#143),1540316692.665576,1
+81,5418ebcb,Fix conf.py for doc build,1540316660.4980788,1
+82,81959832,Fix bug and improve ODE integration of the spherical diffuse Green's function (#109),1540316658.28487,1
+83,fb6ff160,Fix code bloat in Factory Method implementation and usage,1540316656.428345,1
+84,774b7459,Specify linker language and fix some Doxygen warnings,1540316653.604017,1
+85,852bb518,Fix Windows build on AppVeyor CI,1540316648.036099,1
+86,e529c4a0,Fix unrecognized Clang compiler option. Spotted by @jturney,1540316643.12041,1
+87,9253d9a6,Fix docstrings in dielectric_profile [ci skip],1540316637.531393,1
+88,62613246,Stupid fix in compute_nonequilibrium_asc: we were still using the equilibrium PCM matrix,1540316624.842587,1
+89,24fd44ab,Fix problem with explicit initialization of list of spheres.,1540316621.8540661,1
+90,28f567f5,Fix format of template >> Should be > > for C++03 compliance,1540316620.2419028,1
+91,50dab856,Fix erroneous loop construct in loadCavity,1540316611.928167,1
+92,999281be,Fix erroneous loop construct in loadCavity,1540316609.876235,1
+93,6eed8626,Push CMake requirements up to 2.8.9 and fix issue with list expansion,1540316608.002753,1
+94,46b346da,[Backport from ReSpect] Fix initialization of explicit solvent from host,1540316604.612103,1
+95,e1d35795,Fix generation of faulty static library,1540316589.550923,1
+96,3f40314f,Fix errors with std::to_string when C++11 support is disabled,1540316587.449734,1
+97,022f7614,Fix versioning regex (#128),1540316585.9695768,1
+98,aee88f58,Fix race condition when building,1540316582.168451,1
+99,bc78fc17,Fix Python 3 issue writing out uppercased input,1540316579.60616,1
+100,c13c3f69,Fix use of enable_if,1540316552.228261,1
+101,e6773d3f,Correct dependencies between targets + fix .travis.yml on OS X,1540316550.442141,1
+102,c5f415a4,Fix flags for C compiler,1540316548.550818,1
+103,5dc6fcdc,Simple fix in GenericMacros.cmake,1540316546.7446961,1
+104,25db250e,Fix flags for C++ compilers,1540316544.940249,1
+105,1791f9ac,Fix important issue with solvent input spotted by @Yann.,1540316543.492208,1
+106,4dfcd0b1,Fix broken tests,1540316541.9478061,1
+107,e3369458,Fix input parsing test cases,1540316540.764179,1
+108,edcaf9d2,Fix CPCM regression and Factory initialization,1540316529.124514,1
+109,e04bd174,Bug fix First Kind Second Kind,1540316526.8558161,1
+110,dd759d3e,Fix where Eigen 3 ends up...,1540316519.359576,1
+111,e0b69f50,Fix binders' blues,1540316514.652785,1
+112,2ad0a666,Fix the PCMSOLVER_ERROR macro. It now prints out a more informative error message.,1540316510.574017,1
+113,305da7a6,Fix 3D ForIdGreen meta-function,1540316500.30811,1
+114,35a16b5e,Fix some inconsistencies and a potential memory leak,1540316498.539931,1
+115,f90300e6,Fixed a linker issue that had escaped,1540316491.587478,1
+116,191966f4,Correct compilation errors in for_id,1540316486.469315,1
+117,b42db81a,Fix tests,1540316474.771121,1
+118,d770f16e,Fixes compilation errors on GCC 4.4.7,1540316473.464816,1
+119,2e4cf134,"- Fixed (or better hacked) CMakeLists.txt in order to avoid the compilation of the executable when    ""make all"" is run  - Defined an init_pcm that should decide whether traditional or wavelet PCM is used  - Fixed python input parsing (to be merged with modifications from Roberto...)",1540316472.03708,1
+120,28e7c19f,Fixed compilation issues and added cmake files from Dalton,1540316470.5867212,1
+121,9c554cff,Quick fix for cavity input in Atoms mode.,1540316469.425539,1
+122,8fbb76b5,Explicit mode cavity setup test fixed,1540316468.041523,1
+123,f86c962b,Explicit mode cavity setup test fixed,1540316466.615114,1
+124,6a2d6558,Bug fix but still smth wrong with wavelet module,1540316461.578792,1
+125,7dbf3886,Add copyright notices where they were missing and fix compilation errors.,1540316455.2429788,1
+126,c028f7ac,Fix some inconsistencies in wavelet cavity generation,1540316452.524179,1
+127,e0bbbc99,Fix compilation issue with tests.,1540316450.526897,1
+128,1cafed7f,volume fixed and ConAF reinserted,1540316448.740829,1
+129,41169020,Fix compilation issues and tests:,1540316446.955501,1
+130,46ac172f,fixed bug in setup and disabled blas by default,1540316445.8250759,1
+131,004869ac,Minor modifications to initialization of solver in interface,1540316444.515529,1
+132,e4e9048a,Fixed conflicts,1540316441.089096,1
+133,8ba978a7,Fixed unity conversion problem. Units are at present a total mess!! This should be fixed ASAP!,1540316438.0070071,1
+134,5a4c362e,Fix compilation issues on stallo.,1540316422.737061,1
+135,05838dd1,Fixed bug in python script,1540316419.209525,1
+136,27269969,Fixed units. From now on EVERYTHING in the module should be in Atomic Units. To be fixed: 1) Interface and GePol Cavity 2) Pedra 3) Sure something else I have now forgotten...  ),1540316417.677997,1
+137,7e194303,fixed a wrong sign in the computation of the S_e stiffness matrix,1540316416.010966,1
+138,2f621c43,Fixed a bug in the wem library (NaN in precond.c) and fixed unit conversion problem.,1540316414.506532,1
+139,4e68ca1c,Fixed two bugs.,1540316412.823917,1
+140,19f2588d,Correct small error in input parsing script,1540316411.201279,1
+141,b18a7f52,Fixed compilation problem in GreensFunction,1540316409.188444,1
+142,f7aa2c2c,Minor modifications. Symmetry seems to work with DALTON.,1540316403.116589,1
+143,6efa8aae,a change of sign in the double layer fixed Si,1540316397.295794,1
+144,96efb9d6,WEMRHS2M call fixed - still error with GreensFunction,1540316391.796189,1
+145,9295432e,Roberto: fixed osx-error,1540316386.8150382,1
+146,4a80447f,Fix open/close/delete of cavity.off,1540316384.786128,1
+147,e7a21038,Correct two (2\!) bugs. One in the diagonal elements calculation by collocation and one in the anisotropic formation of the system matrix,1540316382.53004,1
+148,815865e7,Fix compilation errors with C++11 enabled,1540316380.327846,1
+149,7d081cdd,Fixed NaN bug: same previously fixed in PWC library,1540316378.819355,1
+150,264f4656,fixed stupid bug,1540316370.38187,1
+151,e51574d5,Small fix for the release process.,1540316369.169821,1
+152,86d96f1d,Small fix for input parameters printout,1540316367.452198,1
+153,9d64084e,Minor modifications in dielectric profiles,1540316363.961473,1
+154,cb476c3a,Fix error with compilation of fortran_bindings,1540316362.309392,1
+155,c678de74,Small fix in WaveletCavity,1540316360.649785,1
+156,665c1e88,Minor fixes,1540316359.158609,1
+157,09a2301b,small fix,1540316357.802358,1
+158,dda2fcb3,Small fix.,1540316356.4923859,1
+159,f44174a8,Removed epsilon scaling factor from pwl CASE=3 S_e and small input fix,1540316342.353258,1
+160,4a7af635,Correct a potential bug in the tear_down_pcm_ function (double delete...),1540316339.721105,1
+161,45268675,Fix compiler error in timerDONE function,1540316333.3764439,1
+162,a417ac60,Small corrections  mainly trying to understand how a factory works...,1540316331.958104,1
+163,d5375fa8,Fix stupid error.,1540316326.767883,1
+164,bb2664a8,Fix compilation w/o C++11,1540316325.040306,1
+165,42b404cf,1. added setters for potential and charges in Cavity abstract base class  2. changed the wrapper for computing charges in interface,1540316318.744213,1
+166,eb37dd9e,Merge conflict fixed.,1540316308.8064961,1
+167,54c4cce0,fixed bug at the pedra interface,1540316288.907115,1
+168,0a0c8cf9,Debugging anisotropic system matrix formation,1540316261.56659,1
+169,0cdb58f5,Small fix to pedra printout (units are AU).,1540316259.619714,1
+170,9682c106,Small corrections.,1540316256.189962,1
+171,bbd71c2a,Small change,1540316253.208727,1
+172,610697e9,Something in Cavity class (to be changed),1540316251.8437982,1
+173,a9bc698a,Minor mods to names used for volume function in pwl.,1540316247.608476,1
+174,ae6381fb,Correct a sign error in the derivative of the dielectric profiles,1540316237.192958,1
+175,dfda032c,Fix calculation of S matrix inverse (#156),1540316235.567951,1
+176,658266c0,compilation succesfull. not inlcuded molecule in energy calculation,1540316232.1034741,1
+177,93e62cfb,some small changes,1540316230.319434,1
+178,90ef546a,Fixes for installation (#121),1540316224.8228009,1
+179,7345f07f,Fixed a bug in IEFSolver: wrong sign for the Diag element of the D matrix,1540316223.630439,1
+180,6c897c0c,minor changes to remove compilation errors. still a long way to go,1540316221.523618,1
+181,b47e8ab3,Minor conflict fix in the interface,1540316218.208654,1
+182,3f9355e1,Minor modifications.,1540316206.615177,1
+183,11083164,Minor refactoring.,1540316202.5702481,1
+184,0745e6bc,Minor modifications.,1540316201.4588552,1
+185,c78e1c41,Small fixes,1540316200.063113,1
+186,d4d5d786,Minor tweaks,1540316198.616475,1
+187,3be4d5ef,Minor changes. Potential bugs spotted with the help of valgrind.,1540316197.114689,1
+188,1ac608fc,changed energy calculation,1540316194.287766,1
+189,058dc18d,Fixed a sign error on the matrix.,1540316192.725962,1
+190,7c82244e,Various fixes for cavity formation.,1540316191.196768,1
+191,b244ed33,Minor fixes.,1540316184.259913,1
+192,e2e73dbc,Reading of Maharavo's cavity files seems to work now. Still problems with energy calculation,1540316169.14431,1
+193,9121e084,Fixed a sign error! Cut&Paste is the root to all bugs...,1540316158.6396859,1
+194,4d455a1f,Move getFromRawBuffer template function to MathUtils,1540317252.201534,0
+195,e9c76d5b,Get maximum L value from input,1540317250.132149,0
+196,465c967a,Changed factor for PCM diagonal elements,1540317247.439907,0
+197,4641567d,Converting Bondi vdW radii from Angstrom to AU.,1540317245.708041,0
+198,3e6395ac,changed probe radius back to original value,1540317242.713602,0
+199,ad087c82,Input reading is case-insensitive.,1540317235.033835,0
+200,f89d4b25,Changed labels of surface function from Chg to ASC and from Pot to MEP.,1540317233.029905,0
+201,3b12bceb,The PCMInput header has to always be included  to avoid incomplete type errors,1540317205.2725198,0
+202,3b4cac63,Still debugging YAML,1540317199.89974,0
+203,6afc2d09,almost compiling WEMSolver.cpp - WEMRHS2M missing and some errors with the GreensFunction,1540317197.372359,0
+204,48497f07,added wavelet software from Helmut,1540317173.846344,0
+205,0016b9a2,Addin tests for the save/load functions. Strange linker errors...,1540317170.893841,0
+206,958abc9a,Moved interpolation class to utils,1540317166.958465,0
+207,33617205,Correct typo in script...,1540317164.574125,0
+208,7acf3465,added wavelet tree print,1540317162.7823632,0
+209,7045ad8d,Fine-grain compilation on sources based on DEVELOPMENT_CODE flag.,1540317160.1189811,0
+210,a1bf3fe5,Solvent class.,1540317157.720315,0
+211,11b47da5,Python script accepts compression parameters for wavelet solvers,1540317155.9594312,0
+212,6923a5d9,Remove surface function class.,1540317153.832715,0
+213,ff237055,"Revert ""Disable compiler warnings from wavelet libraries""",1540317151.58666,0
+214,08b6259e,Input reading works both when Python is available and when it is not.,1540317142.249794,0
+215,5b8ae959,Enable compilation of unit tests in this branch. Add default CTOR to CPCMSolver and IEFSolver classes. Modify GePol cavity tests and add a test for CPCMSolver.,1540317127.403143,0
+216,694055f4,Nonequilibrium solver was not initialized,1540317124.982991,0
+217,db6840ce,It is now possible to choose a profile parametrized by an error function,1540317122.058175,0
+218,8e0f7332,Solved problem with installation to /usr/local,1540317119.4365132,0
+219,e8208aae,fake potential method,1540317116.36337,0
+220,ecb14ad1,Added cavity constructor from single sphere,1540317110.63574,0
+221,09185052,PCM solver with template for GF,1540317107.580293,0
+222,214db4f4,1. Changed cavity constructors  to get the Factory to work. 2. Factories belong in the directories of their object type.,1540317104.761148,0
+223,6a409939,added cavity as external submodule,1540317102.14697,0
+224,535818e8,Start work on writer/reader to/from file for cavity classes.,1540317100.4523358,0
+225,514df245,Cavity Factory working  but not smoothly enough...,1540317097.517153,0
+226,6d145fa7,Still working on the symmetric generation of the cavity.,1540317094.260898,0
+227,9cd02f5b,Symmetric generation of cavity now working.,1540317092.092336,0
+228,828fa055,Dividing responsibility between Cavity and SurfaceFunction,1540317090.610974,0
+229,858745af,New classes for implicit cavity specification.,1540317088.184458,0
+230,ccb42ccd,using nodeIndex_ vector to avoid negative volume. added poly_wavelet that reads a cavity.dat file and an atom file,1540317074.79279,0
+231,bc3ca2ca,Print GePol cavity size.,1540317072.29656,0
+232,59a193d4,Correct typo in update_copyright_notice.py.in,1540317069.335576,0
+233,5396caa8,Program stops after cavity generation,1540317067.142623,0
+234,536b11b4,updated cavity module,1540317061.7299368,0
+235,d6866092,Removes checks on a and d' compression params from input. We read Maharavo's file for the cavity,1540317050.141956,0
+236,c32128df,Same as previous commit for other wavelet libraries.,1540317036.64952,0
+237,fa98b717,Disable compiler warnings from wavelet libraries,1540317027.208233,0
+238,98668ae9,compiled with wavelet library (not used yet...),1540317018.784709,0
+239,f4d0444f,Wavelet cavity code compiles and generates a dump. No clue what to do with it for now...,1540317014.6774929,0
+240,0abd1614,Disable compilation of separate libraries is unit testing is not required.,1540317011.463589,0
+241,7011be7d,Add test for C6H6 with wavelet cavity.,1540317007.5589151,0
+242,76263946,Changed order of tests for wavelet cavity generator (NH3 test now runs before unit sphere),1540317000.286535,0
+243,7bf511d8,modified pcm solver to use gepol cavity itnerface,1540316993.295505,0
+244,79d538cb,pcm_implicit gone from cavity generator.,1540316988.6630108,0
+245,852ae8c2,Reorganize to make compilation work with C/C++ hosts,1540316986.1398,0
+246,baf62f2b,Kill execution if wavelet cavity with only one generating sphere is asked.,1540316982.62783,0
+247,60f73269,Tweaking for prettier cavity.off,1540316968.5434618,0
+248,6090839a,Open/closing of cavity.off,1540316966.859432,0
+249,b96290e6,Change headers included in wavelet cavity tests.,1540316961.104006,0
+250,0b7320ec,Correct a comparison of integers of different signs warning.,1540316929.411778,0
+251,709427a3,Remove printout of potential points in wavelet cavity,1540316926.387383,0
+252,5a4acd56,adding Wavelet Cavity,1540316924.645066,0
+253,7647c9db,Cavity output now contains also cavity input,1540316892.984297,0
+254,0919f97a,Correct a double / in CMakeLists.txt,1540316864.103194,0
+255,ff08ffb3,Correct many unused parameter warnings,1540316862.143961,0
+256,a4ee6ba7,Correct documentation warning issued by Clang,1540316860.077175,0
+257,5e7e2cd6,Correct reaches end of non-void function warning.,1540316857.581106,0
+258,79fc89b5,Correct an error in the top-level CMakeLists.txt.,1540316855.36218,0
+259,daa20f21,Correct -Wdocumentation warnings,1540316847.010863,0
+260,8fb6f94c,Correct indentation,1540316838.420149,0
+261,47f89104,Correct a typo.,1540316836.786604,0
+262,f645a347,Correct typo.,1540316834.635609,0
+263,183a24a9,Correct .gitignore,1540316832.773385,0
+264,0eb5e752,Correct stupid typo,1540316822.07385,0
+265,ef3d8cef,compilation of Mask,1540316783.616366,0
+266,5add6259,printing charge in calculation,1540316754.848911,0
+267,f5e85b49,PWL compiles  runs  but result is wrong. Need to fix unit problem first,1540316689.273182,0
+268,5d843ed4,Clang and Clang++ are now supported. It might be necessary to fix the flags.,1540316673.4441712,0
+269,d94e7b57,Fix doc. We ship Boost 1.54.0 not 1.55.0,1540316669.491797,0
+270,1593a9f5,Fix error in custom Boost build CMakeLists.txt,1540316667.77764,0
+271,7acf877d,Fix messy Travis CI builds,1540316640.2286901,0
+272,e139533b,Fix read-in of old .npz files,1540316633.4349132,0
+273,b34928f9,Fix warning in Sphinx build up,1540316631.300644,0
+274,fdcfd415,Fix licensing in Legendre.hpp,1540316601.797737,0
+275,661eeee2,Fix a typo in README and CHANGELOG,1540316599.851789,0
+276,0dcb135e,Fix some issues with types in metal_sphere.F90,1540316597.8614151,0
+277,7d2f705e,Fix links in CHANGELOG.md,1540316591.0657551,0
+278,3ce437c4,Fix visibility of symbols and RPATH,1540316584.302883,0
+279,2808fdc5,Fix a problem with install prefix.,1540316577.2553391,0
+280,5091cad7,Fix some install rules issues,1540316574.5046868,0
+281,dfd7fd20,Fix visibility header,1540316570.011189,0
+282,a1939d57,Fix warning in libgetkw leading to possible bug.,1540316537.167311,0
+283,38d964c5,Fix uppercasing of input (#95),1540316535.171033,0
+284,0effe61b,Fix Fortran bindings,1540316522.898142,0
+285,3f4ef537,Possible fix for install.,1540316520.95929,0
+286,96e1ba20,Fix comments from @MinazoBot,1540316516.675875,0
+287,0d364f17,Fix Doxygen warnings,1540316513.502958,0
+288,c2b70140,Fix some CMake issues.,1540316509.287064,0
+289,72ad1e1c,Fix stupid typo.,1540316503.640759,0
+290,77c55578,Correct a small warning in CTOR initialization list.,1540316502.034073,0
+291,d44d4cc3,Fixed path of executable files.,1540316496.325511,0
+292,4dfac304,Fix MACOSX_RPATH (again),1540316490.090668,0
+293,6145973e,Fix docs.,1540316487.918527,0
+294,35c1b4f1,Fixed errors in CMakeLists.txt,1540316485.2415712,0
+295,09538e7e,Fixed the readthedocs build.,1540316479.231965,0
+296,ae5b6837,Minor restructuring across the module,1540316476.867343,0
+297,dff7a738,fixed launch script,1540316436.070864,0
+298,9f097bce,Minor refactoring of parity function in Symmetry.hpP,1540316429.602758,0
+299,67233d0f,Minor polish.,1540316421.32984,0
+300,bb4e09d7,Small fixes in CMakeLists.txt,1540316398.7913039,0
+301,58530c31,Minor change.,1540316377.128869,0
+302,0158d623,Minor changes.,1540316365.639261,0
+303,e13b5b92,Still working on our square block diagonal matrix class.,1540316349.363966,0
+304,d5996fd7,Cavity ABC now uses Molecule class for initialization of sphere list,1540316344.36669,0
+305,a0fdcad7,changed to use gramian matrix,1540316337.908658,0
+306,f02f68b2,Cavity abstract base class stripped down to pure interface. Redefinition of overloaded operator<< for all the cavity classes.,1540316328.807544,0
+307,c222e42f,Compared to Ville's implementation the code seems to yield the same system matrices and the same charges. Some notes: 1) In order to compare numbers one by one the cavity is explicitly given in the old code otherwise    some small corrections due to Angstrom/AU conversions happen,1540316287.1509,0
+308,6d4a0c84,Changed names in basis.h routines,1540316283.458986,0
+309,4354f15a,Interface changes for cavity.,1540316281.932164,0
+310,4f37aa19,get same T_ and most likely same system matrix now,1540316280.27193,0
+311,bc936be2,Symmetrize S matrix in CPCMSolver,1540316277.215132,0
+312,bbeb252c,new cavity,1540316274.988699,0
+313,343281b8,standalone cavity,1540316272.933558,0
+314,7b334b12,Some changes due to libgetkw,1540316267.442871,0
+315,97083ec4,energy --> energy_pwl,1540316265.2020938,0
+316,61847488,Name changes in some interface functions.,1540316263.138195,0
+317,f060b8cc,Small typo,1540316254.86524,0
+318,5be4feab,Minor fix to CMakeLists.txt,1540316233.7324991,0
+319,9d0f4a81,This fixes issues on Travis,1540316228.626691,0
+320,7c6d4a76,Minor polish,1540316204.86014,0
+321,e35690fa,Update documentation (slightly) Website also updated,1540316186.4771821,0
+322,993056ca,Include fstream in MathUtils.hpp,1540316182.1976051,0
+323,5b46918e,Add binary and png in .gitattributes,1540316178.806222,0
+324,5f7a4f7c,Adjust test thresholds,1540316176.0814302,0
+325,4cd5015f,Document greenData struct members,1540316174.177353,0
+326,78a773bf,Update doc,1540316170.458934,0
+327,29f8b5d2,Modify way lenght conversions are handled.,1540316163.820022,0
